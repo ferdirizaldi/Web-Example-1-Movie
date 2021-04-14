@@ -1,0 +1,67 @@
+<!--Ferdi Rizaldi Rangkuti E20C2022-->
+<!DOCTYPE html>
+<html lang="ja">
+　<head>
+　　<meta charset="utf-8"> 
+　　<title>最終課題E20C2022</title>
+    <link rel="stylesheet" href="./final.css">
+    <script>
+        function uketori(){
+              let simei = document.inqForm.simei.value;
+              let mail = document.inqForm.mail.value;
+              let categ = document.inqForm.categ.value;
+              let title = document.inqForm.title.value;
+              let naiyou = document.inqForm.naiyou.value;
+ 
+              console.log("氏名：" + simei);
+              console.log("e-mail：" + mail);
+              console.log("種類：" + categ);
+              console.log("タイトル：" + title);
+              console.log("内容：" + naiyou);
+          }
+   </script>
+　</head>
+　<body>
+    <header class="headertop">
+        <h1>Ferdiのページ</h1>
+            <nav class="navigationbar">
+                <a href="./index.html">Top</a>&nbsp;&nbsp;
+                <a href="./list.html">List</a>&nbsp;&nbsp;
+                <a href="./shop.html">Shop</a>&nbsp;&nbsp;
+                <a href="#"><span>Inquiry</span></a>
+            </nav>
+    </header>
+    <div class="kansou">
+        <h1>ご意見・感想</h1>
+        <form name="inqForm">
+            <h3>ご氏名</h3>
+                 <input type="text" name="simei">
+            <h3>eメールアドレス</h3>
+                 <input type="email" name="mail">
+            <h3>種類</h3>
+                 <select name="categ">
+                     <option value="お問合せ">お問合せ</option>
+                     <option value="ご意見・ご感想">Webサイトへのご意見・ご感想</option>
+                     <option value="その他">その他</option>
+                 </select>
+            <h3>タイトル</h3>
+                <input type="text" name="title">
+            <h3>内容</h3>
+                <textarea name="naiyou" cols="30" rows="10"></textarea>
+            <p><button type="button" onclick="uketori();">値受取</button></p><br>
+    </div>
+
+
+    <div class="footerbot">
+        <div class="sharebutton">
+        <p>このサイトシェアーする</p>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" 
+        class="twitter-share-button" data-text="Ferdi" 
+        data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <div class="copyright">
+        <p>&copy;Ferdi Rizaldi Rangkuti E20C2022</p>
+        </div>
+    </div>
+　</body>
+</html>
